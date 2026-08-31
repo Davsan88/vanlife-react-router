@@ -5,9 +5,9 @@ import './index.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <Router>
-    <StrictMode>
+  <StrictMode>
+    <Router>
       <App />
-    </StrictMode>,
-  </Router>
+    </Router>
+  </StrictMode>,
 )
