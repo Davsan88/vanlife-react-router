@@ -10,20 +10,26 @@ function App() {
     <>
       <nav>
         <Link to='/home'>
-          <img 
-            src={logo} 
+          <img
+            src={logo}
             alt="#VANLIFE log"
             className='nav-logo'
           />
         </Link>
 
-        <div 
-          className="links-div"
+        <div
+          className="nav-links-div"
         >
-          <Link to='/about'>
+          <Link 
+            to='/about'
+            className='nav-link'
+          >
             About
           </Link>
-          <Link to='/vans'>
+          <Link 
+            to='/vans'
+            className='nav-link'
+          >
             Vans
           </Link>
         </div>
@@ -43,7 +49,9 @@ function App() {
       </Routes>
 
       <footer>
-        © 2026 #VANLIFE
+        <span className='footer-span'>
+          © 2026 #VANLIFE
+        </span>
       </footer>
     </>
   )
