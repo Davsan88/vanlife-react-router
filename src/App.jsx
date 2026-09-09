@@ -1,6 +1,6 @@
 import './App.css'
-import Home from './components/Home'
-import About from './components/About'
+import Home from './pages/Home'
+import About from './pages/About'
 import { Routes, Route, Link } from 'react-router'
 import logo from './assets/logo.png'
 
@@ -10,7 +10,11 @@ function App() {
     <>
       <nav>
         <Link to='/home'>
-          <img src={logo} alt="" />
+          <img 
+            src={logo} 
+            alt="#VANLIFE log"
+            className='nav-logo'
+          />
         </Link>
 
         <div 
