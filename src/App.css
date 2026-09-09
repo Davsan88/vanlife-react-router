@@ -1,0 +1,64 @@
+:root {
+    --font: 'Outfit', sans-serif;
+
+    --color-background: #FFF7ED;
+    --color-dark-text: #161616;
+    --color-light-text: #f4f4f8;
+    --color-nav-text: #4D4D4D;
+    --color-cta-btn: #FF8C38;
+    --color-bg-footer: #252525;
+    --color-text-footer: #AAAAAA;
+    --color-about-bg-cta: #FFCC8D;
+}
+
+.container {
+    width: min(100% - 3em, 800px);
+    margin-inline: auto;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: var(--font);
+
+    height: 100vh;
+}
+
+nav {
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+}
+
+.nav-logo {
+    width: 10rem;
+    height: auto;
+}
+
+.nav-links-div {
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--color-nav-text);
+    font-weight: 600;
+}
+
+
+footer {
+    background-color: var(--color-bg-footer);
+    color: var(--color-text-footer);
+
+    height: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
