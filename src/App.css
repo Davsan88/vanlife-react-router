@@ -57,6 +57,14 @@ nav {
     font-weight: 600;
 }
 
+.nav-link:hover {
+    color: #161616;
+    text-decoration: underline;
+}
+
+button:hover {
+    transform: translate(1px, 1px);
+}
 
 footer {
     background-color: var(--color-bg-footer);
