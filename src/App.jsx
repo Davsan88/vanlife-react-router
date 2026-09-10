@@ -8,32 +8,34 @@ function App() {
 
   return (
     <>
-      <nav>
-        <Link to='/home'>
-          <img
-            src={logo}
-            alt="#VANLIFE log"
-            className='nav-logo'
-          />
-        </Link>
+      <header>
+        <nav>
+          <Link to='/home'>
+            <img
+              src={logo}
+              alt="#VANLIFE log"
+              className='nav-logo'
+            />
+          </Link>
 
-        <div
-          className="nav-links-div"
-        >
-          <Link 
-            to='/about'
-            className='nav-link'
+          <div
+            className="nav-links-div"
           >
-            About
-          </Link>
-          <Link 
-            to='/vans'
-            className='nav-link'
-          >
-            Vans
-          </Link>
-        </div>
-      </nav>
+            <Link
+              to='/about'
+              className='nav-link'
+            >
+              About
+            </Link>
+            <Link
+              to='/vans'
+              className='nav-link'
+            >
+              Vans
+            </Link>
+          </div>
+        </nav>
+      </header>
 
 
       <Routes>
