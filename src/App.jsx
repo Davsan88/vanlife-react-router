@@ -1,6 +1,7 @@
 import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
+import Vans from './pages/Vans'
 import { Routes, Route, Link } from 'react-router'
 import logo from './assets/logo.png'
 
@@ -47,6 +48,11 @@ function App() {
         <Route
           path='/about'
           element={<About />}
+        />
+
+        <Route
+          path='/vans'
+          element={<Vans />}
         />
       </Routes>
 
