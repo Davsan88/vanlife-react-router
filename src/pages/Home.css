@@ -16,13 +16,14 @@
 .hero-text {
     display: flex;
     flex-direction: column;
-    padding-block: 3em;
+    padding-block: 3em 5em;
     gap: 1.5em;
 }
 
 .hero-btn {
-    margin-bottom: 5em;
+    margin-top: 1em;
     padding: 1em;
+    width: 100%;
 
     background-color: var(--color-cta-btn);
     color: var(--color-light-text);
