@@ -1,0 +1,124 @@
+.vans-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 1em;
+}
+
+.filtering-chips-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 1.5em 3em;
+    gap: 2em;
+}
+
+.vans-type-chip {
+    border-radius: 5px;
+    background-color: var(--color-type-chip);
+    color: var(--color-grey-text);
+    text-transform: capitalize;
+
+    margin-right: 1em;
+    padding: 0.5em 1.5em;
+}
+
+.vans-clear-filter-btn {
+    font-family: var(--font);
+    color: var(--color-grey-text);
+    font-size: 1rem;
+
+    border: none;
+    background-color: transparent;
+
+    padding: 0;
+}
+
+.vans-clear-filter-btn:hover {
+    color: #161616;
+    border-bottom: solid 1px #161616;
+}
+
+.vans-grid-div {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 2em;
+}
+
+.van-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.van-details-div {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "name price"
+    "tag  .";
+}
+
+.van-name {
+    width: auto;
+    grid-area: name;
+}
+
+.van-price-div {
+    text-align: right;
+    grid-area: price;
+}
+
+.van-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.van-filter-tag {
+    grid-area: tag;
+    justify-self: start;
+    padding: 0.5em 0.75em;
+    
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 5px;
+    background-color: var(--color-bg-footer);
+    color: var(--color-light-text);
+
+}
+
+.simple-tag {
+    background-color: var(--color-simple-tag);
+}
+
+.rugged-tag {
+    background-color: var(--color-rugged-tag);
+}
+
+.luxury-tag {
+    background-color: var(--color-luxury-tag);
+}
+
+.van-card-link {
+    text-decoration: none;
+    color: var(--color-dark-text)
+}
+
+
+@media (min-width: 600px) {
+
+    .vans-grid-div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    .vans-grid-div {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+}
