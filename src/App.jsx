@@ -2,6 +2,7 @@ import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
 import Vans from './pages/Vans'
+import VanDetail from './pages/VanDetail'
 import { Routes, Route, Link } from 'react-router'
 import logo from './assets/logo.png'
 
@@ -53,6 +54,11 @@ function App() {
         <Route
           path='/vans'
           element={<Vans />}
+        />
+
+        <Route
+          path='/van/:id'
+          element={<VanDetail />}
         />
       </Routes>
 
