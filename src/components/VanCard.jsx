@@ -18,7 +18,7 @@ const VanCard = ({ van }) => {
                     alt={`Campervan called ${name}`}
                     className="van-img"
                 />
-                <div className="van-details-div">
+                <div className="van-info-div">
                     <h2 className="van-name">
                         {name}
                     </h2>
