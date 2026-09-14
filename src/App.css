@@ -4,11 +4,15 @@
     --color-background: #FFF7ED;
     --color-dark-text: #161616;
     --color-light-text: #f4f4f8;
-    --color-nav-text: #4D4D4D;
+    --color-grey-text: #4D4D4D;
     --color-cta-btn: #FF8C38;
     --color-bg-footer: #252525;
     --color-text-footer: #AAAAAA;
     --color-about-bg-cta: #FFCC8D;
+    --color-type-chip: #FFEAD0;
+    --color-simple-tag: #E17654;
+    --color-rugged-tag: #115E59;
+    --color-luxury-tag: #161616;
 }
 
 .container {
@@ -53,7 +57,7 @@ nav {
 
 .nav-link {
     text-decoration: none;
-    color: var(--color-nav-text);
+    color: var(--color-grey-text);
     font-weight: 600;
 }
 
