@@ -51,7 +51,7 @@ const VanDetail = () => {
                         </span>
                         /day
                     </div>
-                    <p className="van details description">
+                    <p className="van-details-description">
                         {van.description}
                     </p>
                     <button className="hero-btn ">
