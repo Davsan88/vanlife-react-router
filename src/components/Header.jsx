@@ -18,6 +18,12 @@ const Header = () => {
                     className="nav-links-div"
                 >
                     <Link
+                        to='/host'
+                        className='nav-link'
+                    >
+                        Host
+                    </ Link>
+                    <Link
                         to='/about'
                         className='nav-link'
                     >
