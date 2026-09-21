@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import '../pages/Vans.css'
-import VanCard from '../components/VanCard'
-import VanTypeChip from '../components/VanTypeChip'
+import './Vans.css'
+import VanCard from '../../components/VanCard'
+import VanTypeChip from '../../components/VanTypeChip'
 
 const Vans = () => {
 
