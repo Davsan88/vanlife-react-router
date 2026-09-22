@@ -52,7 +52,7 @@ nav {
 
 .nav-links-div {
     display: flex;
-    gap: 1.5em;
+    gap: 1em;
 }
 
 .nav-link {
@@ -64,6 +64,13 @@ nav {
 .nav-link:hover {
     color: #161616;
     text-decoration: underline;
+    font-weight: 800;
+}
+
+.nav-active {
+    font-weight: 800;
+    text-decoration: underline;
+    color: #161616;
 }
 
 button:hover {

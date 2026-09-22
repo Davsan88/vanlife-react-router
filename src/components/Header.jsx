@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+import { NavLink } from 'react-router'
 import logo from '../assets/logo.png'
 
 const Header = () => {
@@ -6,35 +6,33 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <Link to='/home'>
+                <NavLink to='/home'>
                     <img
                         src={logo}
                         alt="#VANLIFE log"
                         className='nav-logo'
                     />
-                </Link>
+                </NavLink>
 
                 <div
                     className="nav-links-div"
                 >
-                    <Link
+                    <NavLink
                         to='/host'
-                        className='nav-link'
+                        className={({isActive}) => isActive ? 'nav-active' : 'nav-link'}
                     >
                         Host
-                    </ Link>
-                    <Link
+                    </NavLink>
+                    <NavLink
                         to='/about'
-                        className='nav-link'
-                    >
+                        className={({isActive}) => isActive ? 'nav-active' : 'nav-link'}>
                         About
-                    </Link>
-                    <Link
+                    </NavLink>
+                    <NavLink
                         to='/vans'
-                        className='nav-link'
-                    >
+                        className={({isActive}) => isActive ? 'nav-active' : 'nav-link'}>
                         Vans
-                    </Link>
+                    </NavLink>
                 </div>
             </nav>
         </header>
