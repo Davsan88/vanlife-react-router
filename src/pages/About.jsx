@@ -1,11 +1,10 @@
 import aboutImg from '../assets/about_image.png'
-import '../pages/About.css'
+import './About.css'
 
 const About = () => {
 
     return (
         <>
-
             <img src={aboutImg} alt="" className='about-img' />
 
             <section className="about-section container">
