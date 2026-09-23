@@ -35,14 +35,11 @@ body {
 }
 
 nav {
-    background-color: var(--color-background);
-
-    height: clamp(140px, 15vh, 300px);
+    height: clamp(100px, 10vh, 300px);
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 2rem;
 }
 
 .nav-logo {
@@ -72,6 +69,16 @@ nav {
     text-decoration: underline;
     color: #161616;
 }
+
+
+/* === Host Layout === */
+
+.host-layout-nav {
+    justify-content: left;
+    gap: 2em;
+}
+
+
 
 button:hover {
     transform: translate(1px, 1px);
