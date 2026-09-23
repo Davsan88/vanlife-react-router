@@ -1,30 +1,35 @@
-import { Link, Outlet } from 'react-router'
+import { NavLink, Outlet } from 'react-router'
 
 const HostLayout = () => {
 
     return (
         <>
-            <nav>
-                <Link
+            <nav className='host-layout-nav container'>
+                <NavLink
                     to='/host'
+                    end
+                    className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
                 >
                     Dashboard
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                     to='/host/income'
+                    className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
                 >
                     Income
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                     to='/host/vans'
+                    className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
                 >
                     Vans
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                     to='/host/reviews'
+                    className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
                 >
                     Reviews
-                </Link>
+                </NavLink>
             </nav>
             <Outlet />
         </>
