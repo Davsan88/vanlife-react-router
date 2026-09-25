@@ -23,7 +23,7 @@ const VanDetailHost = () => {
     return (
         <>
             <Link
-                to={'/host/vans/'}
+                to='../vans'
                 className='van-detail-link container'
             >
                 <i className="fa-solid fa-arrow-left-long">

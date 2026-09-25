@@ -6,26 +6,26 @@ const HostLayout = () => {
         <>
             <nav className='host-layout-nav container'>
                 <NavLink
-                    to='/host'
+                    to='.'
                     end
                     className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
                 >
                     Dashboard
                 </NavLink>
                 <NavLink
-                    to='/host/income'
+                    to='income'
                     className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
                 >
                     Income
                 </NavLink>
                 <NavLink
-                    to='/host/vans'
+                    to='vans'
                     className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
                 >
                     Vans
                 </NavLink>
                 <NavLink
-                    to='/host/reviews'
+                    to='reviews'
                     className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
                 >
                     Reviews
