@@ -24,7 +24,8 @@ const VanHost = () => {
 
         return (
             <Link 
-                to={`/host/van/${van.id}`}
+                to={`/host/vans/${van.id}`}
+                key={van.id}
                 className="host-van-link-wraper">
 
                 <div className="host-van-card">

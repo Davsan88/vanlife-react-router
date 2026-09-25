@@ -18,12 +18,11 @@ const VanDetailHost = () => {
         loadHostVanDetails()
     }, [params.id])
 
-    // console.log(van)
-
     return (
         <>
             <Link
-                to='../vans'
+                to='..'
+                relative='path'
                 className='van-detail-link container'
             >
                 <i className="fa-solid fa-arrow-left-long">

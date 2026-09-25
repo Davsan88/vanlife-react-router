@@ -56,7 +56,7 @@ function App() {
               element={<VanHost />}
             />
             <Route
-              path='van/:id'
+              path='vans/:id'
               element={<VanDetailHost />}
             />
             <Route
