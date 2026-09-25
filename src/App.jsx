@@ -9,6 +9,8 @@ import HostLayout from './components/HostLayout'
 import Dashboard from './pages/host/Dashboard'
 import Income from './pages/host/Income'
 import Reviews from './pages/host/Reviews'
+import VanHost from './pages/host/VanHost'
+import VanDetailHost from './pages/host/VanDetailHost'
 
 
 function App() {
@@ -48,6 +50,14 @@ function App() {
             <Route
               path='income'
               element={<Income />}
+            />
+            <Route
+              path='vans'
+              element={<VanHost />}
+            />
+            <Route
+              path='van/:id'
+              element={<VanDetailHost />}
             />
             <Route
               path='reviews'
