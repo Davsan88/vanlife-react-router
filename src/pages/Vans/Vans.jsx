@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useSearchParams } from 'react-router'
 import './Vans.css'
 import VanCard from '../../components/VanCard'
 import VanTypeChip from '../../components/VanTypeChip'
@@ -7,6 +8,9 @@ const Vans = () => {
 
     const [vans, setVans] = useState([])
 
+    const [searchParams, setSearchParams] = useSearchParams()
+    const typeFilter = searchParams.get('type')
+
     useEffect(() => {
 
         async function loadVans() {
@@ -14,14 +18,16 @@ const Vans = () => {
             const data = await res.json()
 
             setVans(data.vans)
-            console.log(data.vans)
+            // console.log(data.vans)
         }
 
         loadVans()
 
     }, [])
 
-    const vanCards = vans.map((van, index) => {
+    const displayVans = typeFilter ? vans.filter(van => van.type === typeFilter) : vans
+
+    const vanCards = displayVans.map((van, index) => {
         return (
             <VanCard
                 key={index}
@@ -48,7 +54,6 @@ const Vans = () => {
                 Explore our van options
             </h1>
             <div className="filtering-chips-div">
-
                 <div className="vans-type-chips-div">
                     {vanTypeChips}
                 </div>
