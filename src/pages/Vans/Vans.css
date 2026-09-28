@@ -144,6 +144,12 @@
 
 /* === Host Vans Page === */
 
+.host-layout-nav {
+    justify-content: left;
+    gap: 1.5em;
+    font-size: 1.125rem;
+}
+
 .host-vans-section {
     display: flex;
     flex-direction: column;
@@ -196,6 +202,7 @@
 .host-van-detail-section {
     background-color: #FFFFFF;
     padding: 1.5em;
+    margin-block: 2em 4em;
 }
 
 .host-van-detail-card {
@@ -238,11 +245,11 @@
 
 .host-van-detail-img {
     flex: 1 1 0;
+    max-width: 15rem;
 }
 
 .host-van-info-div {
     flex: 1 1 0;
-
 }
 
 .host-van-detail-info-name {
@@ -257,6 +264,35 @@
 .host-van-detail-info-price {
     color: var(--color-dark-text);
     font-weight: 700;
+}
+
+.host-van-detail-nav {
+    display: flex;
+    justify-content: left;
+    gap: 1.5rem;
+}
+
+.host-van-pricing-div {
+    padding-block: 1em 2em;
+}
+
+.host-van-pricing-para {
+    justify-self: left;  
+    color: var(--color-grey-text)  
+}
+
+.host-van-pricing-price {
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: var(--color-dark-text)
+}
+
+.host-van-photos-img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+ 
+    border-radius: 5px;
 }
 
 
