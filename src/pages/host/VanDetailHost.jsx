@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router"
+import { NavLink, useParams, Outlet } from "react-router"
 
 const VanDetailHost = () => {
 
@@ -20,7 +20,7 @@ const VanDetailHost = () => {
 
     return (
         <>
-            <Link
+            <NavLink
                 to='..'
                 relative='path'
                 className='van-detail-link container'
@@ -28,7 +28,7 @@ const VanDetailHost = () => {
                 <i className="fa-solid fa-arrow-left-long">
                 </i>
                 <p className="back-to-vans-para">Back to all vans</p>
-            </Link>
+            </NavLink>
 
             <section className="host-van-detail-section container">
                 <div className="host-van-detail-card">
@@ -52,6 +52,28 @@ const VanDetailHost = () => {
                         </div>
                     </div>
                 </div>
+                <nav className="host-van-detail-nav">
+                    <NavLink 
+                        to='.'
+                        end
+                        className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
+                    >
+                       Details 
+                    </ NavLink>
+                    <NavLink 
+                        to='pricing'
+                        className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
+                    >
+                        Pricing
+                    </NavLink>
+                    <NavLink 
+                        to='photos'
+                        className={({ isActive }) => isActive ? 'nav-active' : 'nav-link'}
+                    >
+                        Photos
+                    </NavLink>
+                </nav>
+                <Outlet context={{ van }}/>
             </section>
         </>
     )
