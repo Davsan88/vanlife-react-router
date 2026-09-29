@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useSearchParams } from 'react-router'
+import { useSearchParams, Link } from 'react-router'
 import './Vans.css'
 import VanCard from '../../components/VanCard'
 import VanTypeChip from '../../components/VanTypeChip'
@@ -18,14 +18,20 @@ const Vans = () => {
             const data = await res.json()
 
             setVans(data.vans)
-            // console.log(data.vans)
         }
-
+        
         loadVans()
-
+        
     }, [])
+    // console.log(vans)
 
-    const displayVans = typeFilter ? vans.filter(van => van.type === typeFilter) : vans
+    const handleSetSearchParams = (type) => {
+        setSearchParams({type: type})
+    }
+
+    const displayVans = typeFilter 
+        ? vans.filter(van => van.type === typeFilter) 
+        : vans
 
     const vanCards = displayVans.map((van, index) => {
         return (
@@ -45,6 +51,7 @@ const Vans = () => {
         <VanTypeChip
             key={type}
             type={type}
+            handleSetSearchParams={handleSetSearchParams}
         />
     ))
 
@@ -57,9 +64,13 @@ const Vans = () => {
                 <div className="vans-type-chips-div">
                     {vanTypeChips}
                 </div>
-                <button className="vans-clear-filter-btn">
+                <Link to='.'>
+                <button 
+                    onClick={() => setSearchParams('')}
+                    className="vans-clear-filter-btn">
                     Clear filters
                 </button>
+                </Link>
             </div>
             <div className="vans-grid-div">
                 {vanCards}

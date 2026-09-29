@@ -1,9 +1,11 @@
-const VanTypeChip = ({ type }) => {
-    
+const VanTypeChip = ({ type, handleSetSearchParams }) => {
+
     return (
-        <span className="vans-type-chip">
-            {type}
-        </span>
+        <button 
+            onClick={() => handleSetSearchParams(type)}
+            className={`vans-type-chip ${type}`}>
+                {type}
+        </button>
     )
 }
 
