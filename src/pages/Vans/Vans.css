@@ -19,10 +19,17 @@
     border-radius: 5px;
     background-color: var(--color-type-chip);
     color: var(--color-grey-text);
+    font: var(--font);
     text-transform: capitalize;
+    border: none;
 
     margin-right: 1em;
     padding: 0.5em 1.5em;
+}
+
+.vans-type-chip:hover,
+.vans-type-chip.selected {
+    color: var(--color-light-text)
 }
 
 .vans-clear-filter-btn {
@@ -90,17 +97,24 @@
 
 }
 
-.simple-tag {
+.simple-tag,
+.vans-type-chip.simple:hover, 
+.vans-type-chip.simple.selected {
     background-color: var(--color-simple-tag);
 }
 
-.rugged-tag {
+.rugged-tag,
+.vans-type-chip.rugged:hover, 
+.vans-type-chip.rugged.selected {
     background-color: var(--color-rugged-tag);
 }
 
-.luxury-tag {
+.luxury-tag,
+.vans-type-chip.luxury:hover, 
+.vans-type-chip.luxury.selected {
     background-color: var(--color-luxury-tag);
 }
+
 
 .van-card-link {
     text-decoration: none;
