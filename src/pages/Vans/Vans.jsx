@@ -50,6 +50,7 @@ const Vans = () => {
         <VanTypeChip
             key={type}
             type={type}
+            typeFilter={typeFilter}
             handleSetSearchParams={handleSetSearchParams}
         />
     ))
