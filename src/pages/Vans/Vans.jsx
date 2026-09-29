@@ -7,8 +7,8 @@ import VanTypeChip from '../../components/VanTypeChip'
 const Vans = () => {
 
     const [vans, setVans] = useState([])
-
     const [searchParams, setSearchParams] = useSearchParams()
+
     const typeFilter = searchParams.get('type')
 
     useEffect(() => {
@@ -19,18 +19,17 @@ const Vans = () => {
 
             setVans(data.vans)
         }
-        
+
         loadVans()
-        
+
     }, [])
-    // console.log(vans)
 
     const handleSetSearchParams = (type) => {
-        setSearchParams({type: type})
+        setSearchParams({ type: type })
     }
 
-    const displayVans = typeFilter 
-        ? vans.filter(van => van.type === typeFilter) 
+    const displayVans = typeFilter
+        ? vans.filter(van => van.type === typeFilter)
         : vans
 
     const vanCards = displayVans.map((van, index) => {
@@ -64,13 +63,14 @@ const Vans = () => {
                 <div className="vans-type-chips-div">
                     {vanTypeChips}
                 </div>
-                <Link to='.'>
-                <button 
-                    onClick={() => setSearchParams('')}
-                    className="vans-clear-filter-btn">
-                    Clear filters
-                </button>
-                </Link>
+                {typeFilter 
+                    ? <button
+                        onClick={() => setSearchParams('')}
+                        className="vans-clear-filter-btn">
+                        Clear filters
+                      </button>
+                    : null
+                }
             </div>
             <div className="vans-grid-div">
                 {vanCards}
