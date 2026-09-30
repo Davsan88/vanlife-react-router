@@ -14,6 +14,8 @@ import VanDetailHost from './pages/host/VanDetailHost'
 import HostVanInfo from './pages/host/HostVanInfo'
 import HostVanPricing from './pages/host/HostVanPricing'
 import HostVanPhotos from './pages/host/HostVanPhotos'
+import NotFound from './pages/NotFound'
+import Login from './pages/Login'
 
 
 function App() {
@@ -40,6 +42,10 @@ function App() {
           <Route
             path='vans/:id'
             element={<VanDetail />}
+          />
+          <Route
+            path="login"
+            element={<Login />}
           />
 
           <Route
@@ -80,6 +86,11 @@ function App() {
               element={<Reviews />}
             />
           </Route>
+
+          <Route 
+            path='*'
+            element={<NotFound />}
+          />
         </Route>
       </Routes>
     </>
