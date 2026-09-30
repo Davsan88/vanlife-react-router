@@ -34,11 +34,11 @@ function App() {
             element={<About />}
           />
           <Route
-            path='vans'
+            path='vans/'
             element={<Vans />}
           />
           <Route
-            path='van/:id'
+            path='vans/:id'
             element={<VanDetail />}
           />
 
