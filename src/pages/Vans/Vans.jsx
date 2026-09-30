@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useSearchParams, Link } from 'react-router'
+import { useSearchParams } from 'react-router'
 import './Vans.css'
 import VanCard from '../../components/VanCard'
 import VanTypeChip from '../../components/VanTypeChip'
@@ -37,6 +37,8 @@ const Vans = () => {
             <VanCard
                 key={index}
                 van={van}
+                searchParams={searchParams}
+                typeFilter={typeFilter}
             />
         )
     })

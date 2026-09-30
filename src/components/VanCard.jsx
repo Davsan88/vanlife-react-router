@@ -1,13 +1,21 @@
 import { Link } from 'react-router'
 
-const VanCard = ({ van }) => {
+const VanCard = ({ van, searchParams, typeFilter }) => {
 
     const { name, price, imageUrl, type, id } = van
+
+    console.log(searchParams.toString())
+    console.log(typeFilter)
 
     return (
         <div key={id} className="van-div">
             <Link
-                to={`/van/${id}`}
+                to={id}
+                state={{
+                    returnToSearch: `?${searchParams.toString()}`,
+                    type:typeFilter
+                }}
+
                 aria-label={`View details for ${van.name}, 
                              priced at $${van.price} per day`}
                 className='van-card-link'

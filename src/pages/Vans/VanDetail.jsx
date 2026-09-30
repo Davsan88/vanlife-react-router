@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router'
-import { useParams } from 'react-router'
+import { Link, useParams, useLocation } from 'react-router'
 
 const VanDetail = () => {
     const [van, setVan] = useState('')
 
     const params = useParams()
+    const location = useLocation()
+    console.log(location)
 
     useEffect(() => {
         const loadVanDetails = async () => {
@@ -17,15 +18,23 @@ const VanDetail = () => {
         loadVanDetails()
     }, [params.id])
 
+    const returnToSearch = location.state?.returnToSearch || ''
+    console.log(returnToSearch)
+    const type = location.state?.type || 'all'
+
     return (
         <>
             <Link
-                to={'/vans/'}
+                to={`../${returnToSearch}`}
+                relative="path"
                 className='van-detail-link container'
             >
                 <i className="fa-solid fa-arrow-left-long">
                 </i>
-                <p className="back-to-vans-para">Back to all vans</p>
+                <p 
+                    className="back-to-vans-para"
+                >
+                    Back to {type} vans</p>
             </Link>
 
             <section className='van-detail-section container'>
