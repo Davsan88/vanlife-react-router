@@ -1,5 +1,6 @@
-import { NavLink } from 'react-router'
+import { NavLink, Link } from 'react-router'
 import logo from '../assets/logo.png'
+import icon from '../assets/icon.png'
 
 const Header = () => {
 
@@ -33,6 +34,15 @@ const Header = () => {
                         className={({isActive}) => isActive ? 'nav-active' : 'nav-link'}>
                         Vans
                     </NavLink>
+                    <Link
+                        to='login'
+                        className='login-link'
+                    >
+                        <img 
+                            src={icon} 
+                            className="login-icon" 
+                        />
+                    </Link>
                 </div>
             </nav>
         </header>
