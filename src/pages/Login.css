@@ -57,3 +57,7 @@
 .login-icon {
     width: 1.25rem;
 }
+
+.login-first {
+    color: red;
+}
