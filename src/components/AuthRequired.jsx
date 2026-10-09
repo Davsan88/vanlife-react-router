@@ -3,7 +3,7 @@ import { Outlet, Navigate } from "react-router"
 
 const AuthRequired = () => {
 
-    const authenticated = true
+    const authenticated = false
 
     if (!authenticated) {
         return (
