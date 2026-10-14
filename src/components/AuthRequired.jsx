@@ -1,19 +1,20 @@
-import { Outlet, Navigate } from "react-router"
+import { Outlet, Navigate, useLocation } from "react-router"
 
 
 const AuthRequired = () => {
-
-    const authenticated = false
-
-    if (!authenticated) {
+    const isLoggedIn = localStorage.getItem("loggedin")
+    const location = useLocation()
+    
+    if (!isLoggedIn) {
         return (
             <Navigate 
-                to='login' 
-                state={{message: 'You must log in first'}}    
+            to='login' 
+            state={{message: 'You must log in first', from: location.pathname}}
+            replace    
             />
         )        
     }
-
+    
     return <Outlet />
 }
 
