@@ -11,12 +11,16 @@ const VanDetailHost = () => {
         const loadHostVanDetails = async () => {
             const res = await fetch(`/api/host/vans/${params.id}`)
             const data = await res.json()
-            setVan(data.vans[0])
-            console.log(data.vans[0])
+            setVan(data.vans)
+            console.log(data.vans)
         }
 
         loadHostVanDetails()
     }, [params.id])
+
+    if (!van) {
+        return <h2>Loading...</h2>
+    }
 
     return (
         <>
