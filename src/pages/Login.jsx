@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useLocation } from "react-router"
+import { useLocation, useNavigate } from "react-router"
 import './Login.css'
 import { loginUser } from '../api'
 
@@ -7,19 +7,23 @@ const Login = () => {
     const [loginFormData, setLoginFormData] = useState({ email: "", password: "" })
     const [status, setStatus] = useState('idle')
     const [error, setError] = useState(null)
+
     const location = useLocation()
-    console.log(location)
+    const navigate = useNavigate()
+    const from = location.state?.from || '/host'
+
+    console.log(from)
 
     function handleSubmit(e) {
         e.preventDefault()
         setStatus('submitting')
-        
         //  Use "b@b.com" as the username and "p123" as the password.
         async function handleLoginUser (creds) {
             try {  
                 const data = await loginUser(creds)
-                console.log(data)
                 setError(null)
+                localStorage.setItem("loggedin", true)
+                navigate(from, { replace: true })
                 return data
             } catch (err) {
                 setError(err)
