@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-block: 1em;
+    padding-block: 1em 4em;
 }
 
 .filtering-chips-div {
@@ -309,6 +309,226 @@
     border-radius: 5px;
 }
 
+
+/* === Host Dashboard === */
+
+.host-dashboard-section a {
+    color: var(--color-grey-text);
+}
+
+.host-dashboard-earnings {
+    background-color: #ffead0;
+    padding: 2em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.host-dashboard-earnings > .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.host-dashboard-earnings > .info > h1 {
+    font-size: 36px;
+    color: #161616;
+    margin: 0;
+}
+
+.host-dashboard-earnings > .info > p {
+    color: #4d4d4d;
+}
+
+.host-dashboard-earnings > .info > p > span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.host-dashboard-earnings > .info > h2 {
+    margin: 0;
+    font-size: 38px;
+    color: #161616;
+    font-weight: 900;
+}
+
+.host-dashboard-reviews {
+    background-color: #ffddb2;
+    padding: 25px 26px;
+    display: flex;
+    align-items: center;
+}
+
+.host-dashboard-reviews > h2 {
+    margin: 0;
+}
+
+.host-dashboard-reviews .star {
+    color: #ff8c38;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.host-dashboard-reviews p {
+    margin-left: 5px;
+    font-size: 20px;
+    color: #4d4d4d;
+    margin-right: auto;
+}
+
+.host-dashboard-reviews p > span {
+    font-weight: bold;
+    color: #161616;
+}
+
+.host-dashboard-vans {
+    padding: 3em 1.5em;
+}
+
+.host-dashboard-vans > .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.host-dashboard-vans > .vans {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-bottom: 1em;
+}
+
+
+/* === Host Income === */
+
+.host-income {
+    padding-inline: 1.5em;
+    color: var(--color-dark-text);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.host-income > p {
+    color: var(--color-grey-text);
+}
+
+.host-income > p span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.host-income > h2 {
+    font-size: 38px;
+    color: var(--color-dark-text);
+    font-weight: 900;
+}
+
+img.graph {
+    width: 100%;
+    max-width: 500px;
+}
+
+.host-income .info-header > p {
+    color: var(--color-grey-text);
+}
+
+.host-income .info-header > p span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.host-income .info-header > h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 60px;
+}
+
+.host-income .transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 31px;
+    padding: 35px 29px;
+    border-radius: 6px;
+}
+.host-income .transaction > h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.host-income .transaction > p {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-grey-text);
+}
+
+
+/* === Host Reviews === */
+
+.host-reviews {
+    padding: 0 1.5em 4em;
+    color: var(--color-dark-text);
+}
+
+.host-reviews .top-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.host-reviews .top-text > h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.host-reviews .top-text > p {
+    margin: 0;
+    color: var(--color-grey-text);
+}
+
+.host-reviews .top-text > p span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.host-reviews > img {
+    margin-block: 1.5em 2em;
+}
+
+.host-reviews .review {
+    margin-block: 25px;
+}
+
+.host-reviews .review .info {
+    display: flex;
+}
+
+.host-reviews .review .name {
+    color: var(--color-dark-text);
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.host-reviews .review .date {
+    color: var(--color-grey-text);
+}
+
+.host-reviews hr {
+    background-color: var(--color-text-footer);
+    height: 1px;
+    border: 0;
+}
+
+.host-reviews .review-star {
+    color: var(--color-cta-btn);
+    margin-right: 5px;
+}
 
 /* === Media Queries === */
 
