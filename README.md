@@ -154,3 +154,27 @@ This was especially useful for moving from isolated React components to an appli
 
 ---
 
+## 💡 Possible Future Improvements
+
+- Replace the mock API with a real backend and secure authentication
+- Add loading skeletons and more complete error states across all data requests
+- Let users rent a van and manage bookings
+- Add sorting, price ranges, and multi-filter support
+- Persist host listings, income, and review data
+- Add user accounts and role-based permissions
+- Improve test coverage for routing and authentication flows
+- Add deployment configuration and a live demo link
+
+---
+
+## 🙌 Credits
+
+This project is based on the **React Router** guided project from [Scrimba](https://scrimba.com/). The course provided the learning path and design direction; I completed the challenges independently, compared my work with the course material afterwards, and made my own implementation and customisation decisions throughout the codebase.
+
+---
+
+## 📫 Contact
+
+Got feedback or questions?
+
+📧 [david.sanchez.martinez@outlook.com](mailto:david.sanchez.martinez@outlook.com)
