@@ -403,7 +403,7 @@
 /* === Host Income === */
 
 .host-income {
-    padding-inline: 1.5em;
+    /* padding-inline: 1.5em; */
     color: var(--color-dark-text);
     display: flex;
     flex-direction: column;
