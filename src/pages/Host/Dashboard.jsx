@@ -46,7 +46,7 @@ const Dashboard = () => {
     }
     
     return (
-        <section                className="host-dashboard-section "
+        <section className="host-dashboard-section container"
         >
             <section className="host-dashboard-earnings">
                 <div className="info">
