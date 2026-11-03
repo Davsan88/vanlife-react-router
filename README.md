@@ -32,3 +32,55 @@ My focus was to turn the course exercise into a coherent small application while
 
 ---
 
+## 🧭 Routing Structure
+
+The app uses nested routes to keep public pages and the host experience organised:
+
+```text
+/
+├── about
+├── vans
+│   └── :id
+├── login
+└── host (protected)
+    ├── dashboard
+    ├── income
+    ├── vans
+    │   └── :id
+    │       ├── details
+    │       ├── pricing
+    │       └── photos
+    └── reviews
+```
+
+The host section is protected by an `AuthRequired` route wrapper. When a visitor is not signed in, the app preserves the intended destination and returns them there after a successful login.
+
+---
+
+## 🧠 What I Practised
+
+- Nested routes and layout routes
+- Route parameters with `useParams`
+- URL search parameters with `useSearchParams`
+- Navigation state and return paths with `useLocation`
+- Programmatic navigation with `useNavigate`
+- Protected routes using `Navigate` and `Outlet`
+- Active navigation styles with `NavLink`
+- Sharing selected van data with nested routes via outlet context
+- Fetching data, loading states, and error handling with `useEffect` and `useState`
+- Reusable React components and clear component responsibilities
+
+---
+
+## 🛠️ Technologies Used
+
+- React
+- React Router
+- JavaScript (ES6+)
+- Vite
+- CSS3
+- MirageJS for an in-browser mock API
+- React Icons
+
+---
+
