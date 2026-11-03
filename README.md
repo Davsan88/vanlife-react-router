@@ -1,16 +1,34 @@
-# React + Vite
+# 🚐 VanLife – React Router Campervan Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hello there! 👋
 
-Currently, two official plugins are available:
+**VanLife** is a responsive campervan marketplace and host dashboard built while following Scrimba's **React Router** guided project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Visitors can browse campervans, filter the catalogue by type, and view individual listings. A simple authentication flow unlocks a protected host area with a dashboard, income, reviews, and nested views for managing listed vans.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Project Overview
 
-## Expanding the ESLint configuration
+This project began with Scrimba's guided React Router material, but I completed each challenge independently before comparing my approach with the course solution. I also adapted and extended the codebase instead of treating the scrims as a final blueprint.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+My focus was to turn the course exercise into a coherent small application while reinforcing routing, data flow, component composition, and UI-state decisions in React.
+
+---
+
+## ✨ Features
+
+- Browse a catalogue of campervan listings
+- Filter vans by **simple**, **rugged**, or **luxury** using URL search parameters
+- Clear active filters and keep the chosen filter when returning from a van detail page
+- View individual van details, including type, price, description, and image
+- Sign in to access a protected host area
+- Redirect unauthenticated visitors to login, then return them to their intended host route
+- View a host dashboard with earnings, review score, and listed vans
+- Navigate nested host-van views for details, pricing, and photos
+- View income transactions and customer-review summaries
+- Show a dedicated 404 page for unknown routes
+- Responsive layout with reusable navigation, card, filter-chip, and layout components
+
+---
+
