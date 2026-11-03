@@ -9,7 +9,7 @@ const Income = () => {
     ]
 
     return (
-        <section className="host-income">
+        <section className="host-income container">
             <h1>Income</h1>
             <p>
                 Last <span>30 days</span>

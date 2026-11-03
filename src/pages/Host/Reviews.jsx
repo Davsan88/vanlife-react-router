@@ -21,7 +21,7 @@ const Reviews = () => {
     ]
 
     return (
-        <section className="host-reviews">
+        <section className="host-reviews container">
             <div className="top-text">
                 <h2>Your reviews</h2>
                 <p>
