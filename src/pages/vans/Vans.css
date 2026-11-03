@@ -403,7 +403,6 @@
 /* === Host Income === */
 
 .host-income {
-    /* padding-inline: 1.5em; */
     color: var(--color-dark-text);
     display: flex;
     flex-direction: column;
@@ -470,7 +469,7 @@ img.graph {
 /* === Host Reviews === */
 
 .host-reviews {
-    padding: 0 1.5em 4em;
+    padding-bottom: 3em;
     color: var(--color-dark-text);
 }
 
