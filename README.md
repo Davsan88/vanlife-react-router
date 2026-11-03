@@ -83,3 +83,19 @@ The host section is protected by an `AuthRequired` route wrapper. When a visitor
 - React Icons
 
 ---
+
+## 🔧 Beyond the Guided Project
+
+Although the project follows Scrimba's React Router curriculum, the work in this repository is not a straight copy of the scrims. I worked through the challenges myself first, then used the course solution to review trade-offs and improve my implementation.
+
+Meaningful customisations include:
+
+- A reusable `VanCard` component with an accessible listing label
+- Van-type filters generated from the available van data rather than hard-coded in the page
+- Search-param state passed through listing links so the detail page can return visitors to the filtered catalogue they came from
+- A dedicated API module for reusable van and login requests
+- A protected host route that preserves the requested destination through the login flow
+- Nested host-van detail, pricing, and photo views driven by outlet context
+
+---
+
