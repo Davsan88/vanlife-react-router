@@ -99,3 +99,58 @@ Meaningful customisations include:
 
 ---
 
+## ▶️ Running the Project Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Davsan88/vanlife-react-router.git
+```
+
+2. Move into the project folder:
+
+```bash
+cd vanlife-react-router
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open the local address shown in your terminal.
+
+### Demo login
+
+Use the following mock credentials to explore the host area:
+
+```text
+Email: b@b.com
+Password: p123
+```
+
+> This login is supplied by MirageJS for demonstration only. It is not production authentication.
+
+---
+
+## 🎯 What I Focused On
+
+The main goal was not simply to make each route work, but to understand how a multi-page React application fits together:
+
+- Keeping public and protected experiences clearly separated
+- Choosing when state belongs in the URL, navigation state, or component state
+- Making nested routes feel like one connected host workflow
+- Preserving user context when moving between a filtered list and detail page
+- Building reusable UI pieces without losing readability
+
+This was especially useful for moving from isolated React components to an application where navigation, state, data, and layouts all need to cooperate.
+
+---
+
