@@ -6,6 +6,9 @@ Hello there! 👋
 
 Visitors can browse campervans, filter the catalogue by type, and view individual listings. A simple authentication flow unlocks a protected host area with a dashboard, income, reviews, and nested views for managing listed vans.
 
+
+👉 [**Live Demo**](https://vanlife-davsan.netlify.app/)
+
 ---
 
 ## 🚀 Project Overview
@@ -170,6 +173,12 @@ This was especially useful for moving from isolated React components to an appli
 ## 🙌 Credits
 
 This project is based on the **React Router** guided project from [Scrimba](https://scrimba.com/). The course provided the learning path and design direction; I completed the challenges independently, compared my work with the course material afterwards, and made my own implementation and customisation decisions throughout the codebase.
+
+---
+
+## 🌐 Live Demo
+
+👉 [**Live Demo**](https://vanlife-davsan.netlify.app/) 
 
 ---
 
