@@ -34,11 +34,13 @@ body {
 }
 
 nav {
-    height: clamp(100px, 10vh, 300px);
+    height: clamp(125px, 10vh, 300px);
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1em;
 }
 
 a {
@@ -52,6 +54,7 @@ a {
 
 .nav-links-div {
     display: flex;
+    align-items: center;
     gap: 1em;
 }
 
@@ -72,6 +75,44 @@ a {
     text-decoration: underline;
     color: #161616;
 }
+
+.login-link,
+.log-out-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+}
+
+.login-icon {
+    display: block;
+    width: 30px;
+    height: 22px;
+}
+
+.log-out-btn {
+    border: none;
+    background: transparent;
+    color: var(--color-dark-text);
+    cursor: pointer;
+}
+
+.log-out-btn svg {
+    display: block;
+    flex-shrink: 0;
+}
+
+/* .log-out-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    border: none;
+    background: transparent;
+    color: var(--color-grey-text);
+    cursor: pointer;
+} */
 
 .bold {
     font-weight: 700;
@@ -109,7 +150,18 @@ footer {
     flex-direction: column;
 }
 
-.site-layout > header,
-.site-layout > footer {
+.site-layout>header,
+.site-layout>footer {
     flex-shrink: 0;
+}
+
+
+@media (min-width: 600px) {
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 }
