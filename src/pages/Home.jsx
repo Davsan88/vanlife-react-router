@@ -1,4 +1,5 @@
 import './Home.css'
+import { Link } from 'react-router'
 
 const Home = () => {
 
@@ -12,9 +13,13 @@ const Home = () => {
                 <p className="hero-para">
                     Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip.
                 </p>
-            <button className="hero-btn container">
+            <Link 
+                to='/vans'
+                className="hero-btn container"
+
+            >
                 Find your van
-            </button>
+            </Link>
             </div>
         </section>
     )
