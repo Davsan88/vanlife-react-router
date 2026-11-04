@@ -1,6 +1,6 @@
 import { NavLink, Link } from 'react-router'
 import logo from '../assets/logo.png'
-import icon from '../assets/icon.png'
+import { IoMdContact, IoMdLogOut } from 'react-icons/io'
 
 const Header = () => {
     function fakeLogOut() {
@@ -40,13 +40,23 @@ const Header = () => {
                     <Link
                         to='login'
                         className='login-link'
+                        aria-label="Log in"
                     >
-                        <img
-                            src={icon}
-                            className="login-icon"
+                        <IoMdContact 
+                            size={22} 
+                            strokeWidth={5}                          color="var(--color-grey-text)"
                         />
                     </Link>
-                    <button onClick={fakeLogOut}>X</button>
+                    <button
+                        className="log-out-btn"
+                        onClick={fakeLogOut}
+                        aria-label="Log out"
+                    >
+                        <IoMdLogOut 
+                            size={22} 
+                            strokeWidth={5} 
+                        />
+                    </button>
                 </div>
             </nav>
         </header>
