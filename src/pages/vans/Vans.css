@@ -159,6 +159,8 @@
 /* === Host Vans Page === */
 
 .host-layout-nav {
+    display: flex;
+    flex-direction: row;
     justify-content: left;
     gap: 1.5em;
     font-size: 1.125rem;
