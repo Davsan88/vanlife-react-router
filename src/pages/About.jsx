@@ -1,5 +1,6 @@
 import aboutImg from '../assets/about_image.png'
 import './About.css'
+import { Link } from 'react-router'
 
 const About = () => {
 
@@ -25,9 +26,11 @@ const About = () => {
                     <br />
                     Your van is ready.
                 </h2>
-                <button className="cta-btn">
+                <Link 
+                    to='/vans'
+                    className="cta-btn">
                     Explore our vans
-                </button>
+                </Link>
             </section>
         </>
     )
